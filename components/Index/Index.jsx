@@ -19,14 +19,14 @@ const IndexDesktop1080 = styled('div', {
       : data.currentVariant === 'Indexmobile375'
       ? 'unset'
       : `rgba(255, 255, 255, 1)`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `column`,
-  height: '100vh',
-  width: '100%',
-  justifyContent: `flex-start`,
-  alignItems:
+      display: `flex`,
+      position: `relative`,
+      isolation: `isolate`,
+      flexDirection: `column`,
+      height: '100vh',
+      width: '100%',
+       justifyContent: `flex-start`,
+       alignItems:
     data.currentVariant === 'Indextablet720'
       ? `center`
       : data.currentVariant === 'IndexMobile390'

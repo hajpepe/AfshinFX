@@ -437,8 +437,9 @@ I work with.`}
           </Frame13>
         </Frame11>
       </Frame1>
-      <Dialog open={data.isDialogOpen} onClose={fns.toggleDialog}>
+      <Dialog className="hasharikardi" open={data.isDialogOpen} onClose={fns.toggleDialog}>
         <Form1
+         className="Hasharishodam"
           isDialogOpen={data.isDialogOpen}
           toggleDialog={fns.toggleDialog}
         />

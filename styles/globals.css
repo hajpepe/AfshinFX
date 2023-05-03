@@ -24,35 +24,45 @@ body {
   transition: height 0.3s ease-out; /* add a transition for height property */
 }
 
-/* .css-1cavlgd {
+.hasharikardi {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
-} */
-
-
-
-.css-1uby05k-MuiPaper-root-MuiDialog-paper {
-  overflow-y: unset !important;
-  max-height: fit-content !important;
-  max-width: fit-content !important;
-  display: block !important;
+  
 }
 
 
+
+.Hasharishodam {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: blowUpContentTwo 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+}
+
+/* 
 .css-1q80270 {
   height: unset !important;
 }
 
 .css-lydp0y {
   height: 100vh !important;
-}
+} */
 
 
-
+/* 
 .css-1jka4qo {
   align-self: center !important;
-}
+} */
 
 .modal-container {
   position: fixed;
@@ -69,23 +79,17 @@ body {
 }
 
 
-svg.MuiSvgIcon-root.MuiSvgIcon-colorDark\/Primary\/Main.MuiSvgIcon-fontSizeMedium.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-yoei7b-MuiSvgIcon-root-MuiSvgIcon-root {
+
+
+
+.closeform {
   color: #37FDFE !important;
   cursor: pointer;
 }
 
-svg.MuiSvgIcon-root.MuiSvgIcon-colorDark\/Primary\/Main.MuiSvgIcon-fontSizeMedium.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-yoei7b-MuiSvgIcon-root-MuiSvgIcon-root:hover {
+.closeform:hover {
   color: #25acad !important;
 }
 
-
-
-.SvgIcon {
-  animation: blowUpModalTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
-}
-
-.close-icon {
-  animation: blowUpModalTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
-}
 
 

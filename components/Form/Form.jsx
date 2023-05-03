@@ -629,6 +629,7 @@ function Form({ onClose, ...props }) {
             <Frame12 data={data}>
               {!(data.currentVariant === "Screenmobile375") && (
                 <SvgIcon
+                className="closeform"
                   component={CloseIcon}
                   htmlColor={`Dark/Primary/Main`}
                   onClick={props.toggleDialog}
@@ -641,6 +642,7 @@ function Form({ onClose, ...props }) {
                       <Frame14 data={data}>
                         <Frame15>
                           <SvgIcon
+                            className="closeform"
                             component={CloseIcon}
                             htmlColor={`Dark/Primary/Main`}
                             onClick={props.toggleDialog}
