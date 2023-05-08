@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React,{ useState, useEffect } from 'react';
 import { styled } from '@mui/material/styles';
 import SidebarMobileSmall from 'components/SidebarMobileSmall/SidebarMobileSmall';
 import MenuTablet from 'components/MenuTablet/MenuTablet';
@@ -7,7 +7,6 @@ import MenuDesktop from 'components/MenuDesktop/MenuDesktop';
 import Sidebar2 from 'components/Sidebar2/Sidebar2';
 import useIndex from 'components/Index/useIndex';
 import Lottie from 'components/LottieAnimation/animation';
-import { useState, useEffect } from 'react';
 import Loading from 'components/Loading/Loading';
 
 
@@ -206,7 +205,7 @@ function Index(props) {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 5000);
+    }, 8000);
   }, []);
 
   useEffect(() => {
