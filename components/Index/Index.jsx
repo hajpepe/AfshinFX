@@ -211,27 +211,16 @@ function Index(props) {
   useEffect(() => {
     if (!isLoading) {
       document.body.classList.add("loaded");
+      document.body.style.overflow = 'visible';
+    } else {
+      document.body.style.overflow = 'hidden';
     }
-
-    // Disable scrolling if loading
-    const handleScroll = (e) => {
-      if (isLoading) {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, [isLoading]);
 
   return (
     <>
       <div style={{ backgroundColor: `rgba(12, 46, 47, 1)` }}>
-        {isLoading && <Loading />}
+        {isLoading && <Loading className="kosekhar" />}
         <ContentContainer className={!isLoading ? "loaded" : ""}>
           <IndexDesktop1080 className={props.className} data={data}>
             <Page data={data}>
