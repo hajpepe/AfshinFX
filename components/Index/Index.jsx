@@ -8,7 +8,7 @@ import Sidebar2 from 'components/Sidebar2/Sidebar2';
 import useIndex from 'components/Index/useIndex';
 import Lottie from 'components/LottieAnimation/animation';
 import { useState, useEffect } from 'react';
-import Loading from 'components/loading/loading';
+import Loading from 'components/loading/loading.jsx';
 import { motion } from 'framer-motion';
 
 const IndexDesktop1080 = styled('div', {
