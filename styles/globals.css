@@ -7,8 +7,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
+
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer 10+ */
   }
@@ -17,6 +17,13 @@ body {
   ::-webkit-scrollbar {
     display: none;
 }
+
+@media screen and (max-width: 425px) {
+  body {
+    overflow-y: auto;
+  }
+}
+
 
 
 .css-mzejh0{
@@ -46,7 +53,7 @@ body {
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.5);
   animation: blowUpContentTwo 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-
+  overflow: scroll;
 }
 
 /* 
@@ -78,18 +85,29 @@ body {
   animation: blowUpContentTwo 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
-
-
-
-
 .closeform {
   color: #37FDFE !important;
   cursor: pointer;
+  width: 1.5rem !important;
 }
 
 .closeform:hover {
   color: #25acad !important;
+  width: 1.5rem !important;
+}
+
+
+svg {
+  width: fit-content !important;
+  height: fit-content !important;
+  transform: translate3d(0px, 0px, 0px);
+  content-visibility: visible;
 }
 
 
 
+
+#lottie-container svg {
+  width: 100px !important;
+  height: 100px !important;
+}

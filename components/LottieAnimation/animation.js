@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import lottie from 'lottie-web';
+import { useEffect, useRef } from "react";
+import lottie from "lottie-web";
 
 export default function LottieAnimation({ path }) {
   const containerRef = useRef(null);
@@ -11,10 +11,10 @@ export default function LottieAnimation({ path }) {
     // Load the JSON animation
     const animation = lottie.loadAnimation({
       container: container,
-      renderer: 'svg',
+      renderer: "svg",
       loop: true,
       autoplay: false,
-      path: path
+      path: path,
     });
 
     // Save a reference to the animation object
@@ -23,7 +23,7 @@ export default function LottieAnimation({ path }) {
     // Clean up Lottie animation
     return () => {
       animation.destroy();
-    }
+    };
   }, [path]);
 
   // Handle mouse move event
@@ -38,24 +38,15 @@ export default function LottieAnimation({ path }) {
 
     // Set the animation to the calculated frame
     animation.goToAndStop(frame, true);
-  }
+  };
 
   // Add event listener to handle mouse move
   useEffect(() => {
-    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener("mousemove", handleMouseMove);
     return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-    }
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
   }, []);
 
-
-  return (
-    <div 
-      ref={containerRef} 
-      
-    />
-  );
+  return <div ref={containerRef} className="lottieanim" />;
 }
-
-
-

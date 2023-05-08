@@ -92,6 +92,7 @@ const Open = animated(
     width: `26px`,
     height: `26px`,
     margin: `0px 0px 0px 10px`,
+    overflow: `scroll`,
   }))
 );
 
