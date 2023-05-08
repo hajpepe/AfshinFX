@@ -8,8 +8,8 @@ import Sidebar2 from 'components/Sidebar2/Sidebar2';
 import useIndex from 'components/Index/useIndex';
 import Lottie from 'components/LottieAnimation/animation';
 import { useState, useEffect } from 'react';
-import Loading from 'components/loading/loading.jsx';
-import { motion } from 'framer-motion';
+import Loading from 'components/Loading/Loading';
+
 
 const IndexDesktop1080 = styled('div', {
   shouldForwardProp: (prop) => !['data'].includes(prop.toString()),
