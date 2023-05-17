@@ -184,6 +184,124 @@ const Form1 = styled(Form)(({ theme }) => ({
   margin: `0px`,
 }));
 
+const Socials = styled('div')({
+  backgroundColor: `rgba(12, 46, 47, 1)`,
+  display: `flex`,
+  position: `relative`,
+  isolation: `isolate`,
+  flexDirection: `column`,
+  justifyContent: `flex-start`,
+  alignItems: `flex-start`,
+  padding: `0px`,
+  boxSizing: `border-box`,
+  alignSelf: `stretch`,
+  margin: `38px 0px 0px 0px`,
+});
+
+const Vector1Stroke = styled('img')({
+  height: `1px`,
+  width: `238px`,
+  margin: `0px`,
+});
+
+const Text = styled('div')({
+  display: `flex`,
+  position: `relative`,
+  isolation: `isolate`,
+  flexDirection: `row`,
+  justifyContent: `flex-start`,
+  alignItems: `flex-start`,
+  padding: `0px`,
+  boxSizing: `border-box`,
+  alignSelf: `stretch`,
+  margin: `25px 0px 0px 0px`,
+});
+
+
+const FollowMySocialMedia = styled('div')(({ theme }) => ({
+  textAlign: `left`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
+  color: `rgba(55, 253, 254, 1)`,
+  fontStyle: theme.typography['Typography']['Body 2'].fontStyle,
+  fontFamily: theme.typography['Typography']['Body 2'].fontFamily,
+  fontWeight: theme.typography['Typography']['Body 2'].fontWeight,
+  fontSize: theme.typography['Typography']['Body 2'].fontSize,
+  letterSpacing: theme.typography['Typography']['Body 2'].letterSpacing,
+  lineHeight: theme.typography['Typography']['Body 2'].lineHeight,
+  textDecoration: theme.typography['Typography']['Body 2'].textDecoration,
+  textTransform: theme.typography['Typography']['Body 2'].textTransform,
+  flex: `1`,
+  margin: `0px`,
+}));
+
+
+const Icons = styled('div')({
+  display: `flex`,
+  position: `relative`,
+  isolation: `isolate`,
+  flexDirection: `row`,
+  justifyContent: `flex-start`,
+  alignItems: `flex-start`,
+  padding: `0px`,
+  boxSizing: `border-box`,
+  alignSelf: `stretch`,
+  margin: `25px 0px 0px 0px`,
+});
+
+const Dribbble = styled('div')({
+  display: `flex`,
+  position: `relative`,
+  isolation: `isolate`,
+  flexDirection: `row`,
+  justifyContent: `center`,
+  alignItems: `center`,
+  padding: `0px`,
+  boxSizing: `border-box`,
+  width: `25px`,
+  height: `25px`,
+  margin: `0px`,
+});
+
+const Dribbble1 = styled('img')({
+  height: `18px`,
+  width: `18px`,
+  objectFit: `cover`,
+  margin: `0px`,
+});
+
+const ExternalLink = styled('a')({
+  textDecoration: `none`,
+  width: `100%`,
+});
+
+const Behance = styled('div')({
+  display: `flex`,
+  position: `relative`,
+  isolation: `isolate`,
+  flexDirection: `column`,
+  justifyContent: `center`,
+  alignItems: `center`,
+  padding: `0px`,
+  boxSizing: `border-box`,
+  width: `25px`,
+  height: `25px`,
+  margin: `0px 0px 0px 18px`,
+});
+
+const Behance1 = styled('img')({
+  height: `14px`,
+  width: `22px`,
+  objectFit: `cover`,
+  margin: `0px`,
+});
+
+const ExternalLink1 = styled('a')({
+  textDecoration: `none`,
+  width: `100%`,
+});
+
+
 function MenuTablet(props) {
   const { data, fns } = useMenuTablet();
 
@@ -225,6 +343,46 @@ I work with.`}
             <TagsTablet1 />
           </Frame13>
         </Menu>
+        <Socials>
+            <Vector1Stroke
+              src={`assets/images/Menu_Vector_1__Stroke_.png`}
+              loading="lazy"
+              alt={'Vector 1 (Stroke)'}
+            />
+          <Text>
+            <FollowMySocialMedia>
+              {`FOLLOW MY SOCIAL MEDIA`}
+            </FollowMySocialMedia>
+          </Text>
+          <Icons>
+            <Dribbble>
+              <ExternalLink
+                href="https://dribbble.com/AfshinFX"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Dribbble1
+                  src={`assets/images/Menu_Dribbble.png`}
+                  loading="lazy"
+                  alt={'Dribbble'}
+                />
+              </ExternalLink>
+            </Dribbble>
+            <Behance>
+              <ExternalLink1
+                href="https://www.behance.net/afshinfx"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Behance1
+                  src={`assets/images/Menu_Behance.png`}
+                  loading="lazy"
+                  alt={'Behance'}
+                />
+              </ExternalLink1>
+            </Behance>
+          </Icons>
+        </Socials>
       </Frame1>
       <Dialog className="hasharikardi" open={data.isDialogOpen} onClose={fns.toggleDialog}>
         <Form1
